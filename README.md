@@ -9,7 +9,7 @@ rebotes realistas en las paredes superior e inferior, detección de colisiones
 precisa y animaciones fluidas a 60 FPS usando requestAnimationFrame. El Jugador
 1 usa W/S para mover su paleta izquierda, el Jugador 2 usa flechas arriba/abajo
 para la derecha; incluye puntuación en tiempo real, línea central 
-punteada y reinicio de bola al anotar
+punteada y reinicio de bola al anotar. ademas al iniciar a jugar sera con spacio y la pelota saldra rebotada hacia  un lado aleatorio entre los dos jugares
 
 <img width="300" height="233" alt="mesa" src="https://github.com/user-attachments/assets/000fe8de-430c-4b40-b15c-e45ea74b3cf6" />
 
@@ -17,4 +17,4 @@ Algo asi, pero se considera agregar una mesa (imagen) de fondo asi permitiendo u
 
 <img width="494" height="324" alt="mesa_editada" src="https://github.com/user-attachments/assets/8f739ef6-8d0c-40ce-a81a-f356469f462e" />
 
-Ademas tendre sistema de puntaje, musica de fondo y sonido al golpear la pelota 
+Ademas tendre sistema de puntaje, musica de fondo y sonido al golpear la pelota contando el localStorage
