@@ -4,7 +4,7 @@ const lienzo = document.getElementById('juego');
     const altoPaleta = cuadricula * 5;
     const maxPaletaY = lienzo.height - cuadricula - altoPaleta;
     let velocidadPaleta = 8;
-    let velocidadActual = 3;
+    let velocidadActual = 6;
 
     // referencias al marcador
     const puntajeIzqEl = document.getElementById('puntaje-izquierda');
@@ -142,7 +142,7 @@ const lienzo = document.getElementById('juego');
         actualizarPuntajes();
 
         const puntajeLider = Math.max(puntajeIzq, puntajeDer);
-        velocidadActual = Math.min(3 + Math.floor(puntajeLider / 2), 8);
+        velocidadActual = Math.min(5 + Math.floor(puntajeLider / 2), 16);
 
         pelota.reiniciando = true;
         setTimeout(() => {
@@ -156,7 +156,7 @@ const lienzo = document.getElementById('juego');
             pelota.y = lienzo.height / 2;
             pelota.dx = -velocidadActual;
           }
-          pelota.dy = (Math.random() - 0.3) * velocidadActual * 0.5;
+          pelota.dy = (Math.random() - 0.3) * velocidadActual * 1;
         }, 400);
       }
 
